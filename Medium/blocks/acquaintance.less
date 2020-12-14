@@ -1,0 +1,110 @@
+.acquaintance {
+    width: 65%;
+   
+ 
+    &__grid {
+        width: 100%;
+        display: grid;
+        height: 560px;
+        grid-template-columns: repeat(20, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+    }
+ 
+ &__title {
+     font-family: @font-family_main;
+     font-weight: 700;
+     font-size: 36px;
+     line-height: @line-heigth;
+     grid-column-start:1;
+     grid-column-end:4;
+     grid-row-start: 2;
+     grid-row-end: 3;
+     margin: 0;
+     z-index: 3;
+ }
+ 
+ &__subtitle {
+     font-family: @font-family_order;
+     font-weight: 300;
+     font-size: 42px;
+     line-height: 57px;
+     grid-column-start:1;
+     grid-column-end:7;
+     grid-row-start: 3;
+     grid-row-end:4;
+     margin: 0;
+     z-index: 6;
+ }
+ 
+ &__text {
+     font-family: @font-family_order;
+     font-weight: 300;
+     font-size: 15px;
+     line-height: 25px;
+     width: 90%;
+     z-index: 5;
+  
+ 
+ &_up {
+     grid-column-start:1;
+     grid-column-end:7;
+     grid-row-start: 5;
+     grid-row-end: 8;
+    
+ }   
+ 
+ &_down {
+     grid-column-start:15;
+     grid-column-end:-1;
+     grid-row-start: 12;
+     grid-row-end: 14;
+ }
+ }
+ 
+ 
+ &__text::before{
+     content: url("./images/before.png");
+     width: 20px;
+     margin-right: 10px;
+    vertical-align:text-bottom;
+ 
+ }   
+ 
+ &__image {
+     width: 100%;
+     max-height: 391px;
+     height: auto;
+     background-size: cover;
+    
+ 
+     &_1 {
+         background-image: url('./images/header_1.png');
+         grid-column-start:4;
+         grid-column-end:10;
+         grid-row-start: 1;
+         grid-row-end: 12;
+         z-index: 3;  
+     }
+     
+     &_2 {
+        background-image: url('./images/header_green.png');
+        grid-column-start:8;
+         grid-column-end:13;
+         grid-row-start: 3;
+         grid-row-end: 14;
+         z-index: 1;
+         
+       
+     }
+     
+     &_3 {
+        background-image: url('./images/header_2.png');
+         grid-column-start:12;
+         grid-column-end:17;
+         grid-row-start: 5;
+         grid-row-end: 16;
+     }
+ 
+ }
+ 
+ }

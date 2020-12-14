@@ -1,0 +1,90 @@
+.team {
+    width: 95%;
+    background-color:  #FBFBFB;
+    height: 845px;
+
+    &__person {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+    }
+
+    &__name,
+    &__position {
+        font-family: @font-family_main;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    &__name {
+        position: relative;
+    }
+
+    &__charge {
+        font-family: @font-family_order;
+        font-size: 12px;
+        line-height: 25px;
+        color:rgba(119, 119, 119, 1);
+    }
+
+    &__item {
+        width: 30%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        height: 398px;
+        object-fit: cover;
+        
+
+        &_1 {
+        background-image: url("./images/person.png");
+        }
+
+    
+        &_2 {
+            background-image: url("./images/person_2.png");
+            }
+
+            &_3 {
+                background-image: url("./images/person_3.png");
+                }
+    }
+
+    &__column {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.5);
+        text-align: center;
+    }
+
+    &__text:hover {
+        .team__hidden {
+            display:block;
+           
+        }   
+
+        .team__name::after {
+            content: url("./images/after.png");
+            position: absolute;
+            top: 9px;
+            left:44%;   
+        }
+
+        & {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+
+    &__hidden {
+        display: none;
+    }
+}

@@ -1,0 +1,13 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #FBFBFB;
+  align-items: center;
+  height: 690px;
+}
+.services__align {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}

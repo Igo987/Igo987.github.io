@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+}
+.main__acquaintance {
+  margin: 148px auto 0;
+}
+.main__works {
+  margin-top: 146px;
+}

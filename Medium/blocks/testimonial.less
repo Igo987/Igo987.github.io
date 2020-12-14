@@ -1,0 +1,84 @@
+.testimonial {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+
+    &__align {
+        width: 65%;
+        position: relative;
+        
+        &::after {
+            content:url("./images/line.png");
+            position:absolute;
+            right: 25%;
+            bottom: 100px;
+            
+        }
+    } 
+    
+    &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+
+    &::before {
+        content: url("./images/next.png");
+        position:absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &::after {
+        content: url("./images/back.png");
+        position:absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    }
+
+    &__text {
+        width: 65%;
+        position: relative;
+        font-family:@font-family_order;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 31px;
+        text-align: center;
+        margin: 100px auto 31px;
+
+     &:after {
+content: url("./images/quote.png");
+position: absolute;
+top: 90px;
+right: 49%;
+     }   
+    }
+
+   &__author {
+    font-family: @font-family_main;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 29px auto 25px;
+
+    }
+
+    &__span {
+        font-family: @font-family_main;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    &__stars {
+        margin-bottom: 29px;
+
+    }
+}

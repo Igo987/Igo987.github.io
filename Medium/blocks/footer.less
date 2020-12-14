@@ -1,0 +1,104 @@
+.footer {
+    background-color: rgba(251, 251, 251, 1);
+    width: 100%;
+
+    &__bottom {
+        background-color: #2E2E2E;
+        height: 340px;
+    }
+
+    &__top {
+        display: flex;
+    }
+
+    &__icon {
+    width: 32px;
+    height: 32px;
+
+        &_left {
+            background-image: url("./images/mail.png");
+        }
+
+        &_rigth {
+            background-image: url("./images/briefcase_120841.png");
+        }
+
+
+    }
+
+    &__column {
+        width: 50%;
+        display: flex;
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: rgba(112, 189, 89, 1);
+        }
+
+        &:hover   {
+            .footer__title,
+            .footer__subtitle {
+                color:@font-color_header;
+            }
+
+        }
+
+    }
+
+    &__title {
+        font-family: @font-family_main;
+        font-weight: 200;
+        font-size: 24px;
+        line-height: 35px;
+        color: rgba(55, 55, 55, 1);
+    }
+
+    &__subtitle {
+        font-family: @font-family_order;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 19px;
+
+    }
+
+    &__contact {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__address, &__telephon {
+        font-family: @font-family_order;
+        color:rgba(255, 255, 255, 0.5);
+        font-size:13px;
+        line-height: 19px;
+        
+    }
+
+    &__align {
+        display:flex;
+        width: 8%;
+        justify-content: space-between;
+    }
+
+    &__link {
+        margin-top:20px;
+
+        &:hover {
+            transform: translateX(7px) translateY(-2px);
+        }
+    }
+
+    &__social {
+        border-radius: 50%;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+}

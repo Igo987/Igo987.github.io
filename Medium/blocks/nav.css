@@ -1,0 +1,25 @@
+.nav {
+  width: 27.7%;
+}
+.nav__list {
+  width: 100%;
+  margin: 8% 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__link {
+  position: relative;
+}
+.nav__link:after {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #4CAF50;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.nav__link:hover:after {
+  width: 100%;
+}
