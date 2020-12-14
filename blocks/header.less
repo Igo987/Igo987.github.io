@@ -1,0 +1,122 @@
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: baseline;
+    width: 100%;
+    height: 80px;
+    background-color: @BFcolor;
+    
+    &__logo {
+        margin: 4px 0;
+    
+    }
+    
+    &__nav {
+        width: 50%; 
+    
+        @media (max-width:1024px) {
+           display:none; // grid
+           margin-top: 2%;
+           
+        }
+    
+        @media (max-width:500px) {
+            display: block;
+           
+        }
+    }
+    
+    &__menu {
+        z-index:200;
+    
+        @media (max-width:1024px) {
+            background-image: url("./Image/menu.png");
+            width: 40px;
+            height: 40px;
+            opacity: 0.7;
+            position: absolute;
+            top: 30%;
+            left: 28%;
+            margin-left: 10px;
+            z-index: 70;
+        }
+    
+            @media (max-width:700px) {
+                margin-left: 20px;
+        }
+    
+        @media (max-width:600px) {
+            margin-left: 30px;
+    }
+    
+    @media (max-width:500px) { 
+        position: inherit;
+    }
+       
+    }
+    
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        width: 19%;
+        justify-content: space-between;
+    
+        @media (max-width:1450px) {
+            display: grid;
+            width: 20%;
+            grid-auto-columns: auto;
+            grid-template-rows: auto;
+        }
+    
+        @media (max-width:1024px) {
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        margin-top: 20px;
+    }
+    
+    @media (max-width:500px) { 
+        display: none;
+    }
+    }
+    
+    &__input {
+        width: 0;
+        background: transparent;
+    }
+    
+    
+    &__align {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    @media (max-width:500px) { 
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    }
+    
+    
+    &__phone {
+        font-family:@fontFamilyBold;
+        font-size: 18px;
+        line-height: 25px;
+    
+        @media (max-width:1450px) {
+        min-width: 170px;
+        margin: 7px 0 0;
+        }
+    
+        @media (max-width:1024px) {
+            margin: 7px 15px;
+    
+    }
+    }
+    }

@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family:'GothamPro';
+    font-style: normal;
+    src: local('GothamPro'),
+    url('./fonts/GothamPro.woff2');
+}
+
+@font-face {
+    font-family:'GothamProBold';
+    font-style: bold;
+    src: local('GothamPro'),
+    url('./fonts/GothamPro-Bold.woff2');
+}
+
+@font-face {
+    font-family:'Amalfi';
+    font-style: normal;
+    src: local('Amalfi'),
+    url('./fonts/Amalfi-Regular.woff2');
+}
+
+@font-face {
+    font-family:'Century-Gothic';
+    font-style: normal;
+    src: local('Century-Gothic'),
+    url('./fonts/CenturyGothic.woff');
+}
+

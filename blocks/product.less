@@ -1,0 +1,186 @@
+@baseFontSize: 16px;
+@baseLineHeight: 21px;
+@baseFontColor: #4c360b;
+@hoverFontColor: #c36221;
+@BFcolor:#f9f7f5;
+@fontFamilyOrder:'GothamPro','Arial Black',sans-serif;
+@fontFamilyBold:'GothamProBold';
+@fontAmalfi:'Amalfi','Comic Sans MS';
+@fontGothic:'Century-Gothic','Tahoma',sans-serif;
+@lineHeigth_52:52px;
+@qualityBColor:#f6f4f0;
+
+.product {
+    width: 100%;
+    background-image: url("./Image/back_color.png");
+    background-position: 100% 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 700px;
+    z-index: 20;
+
+    &::before {
+        position: absolute;
+        content: url("./Image/before_up.png");
+        left:0;
+        top:0;
+    }
+
+
+    &::after {
+        position: absolute;
+        content: url("./Image/after_up.png");
+        right:0;
+        top:0;
+    }
+
+    &__image {
+        background-image: url(Image/58.png);
+        background-position: 100% 100%;
+        width: 60%;
+        height: 650px;
+        z-index: 5;
+        position: absolute;
+        background-repeat: no-repeat;
+        bottom: 10px;
+        right: 21%;
+        box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+
+        @media (max-width:900px) {
+        background-position: 80% 100%;
+        width: 60%;
+        }
+
+        @media (max-width:800px) {
+            background-position: 80% 100%;
+            width: 70%;
+            right: 15%;
+        }
+
+        @media (max-width:700px) {
+        background-position: 95% 100%;
+        width: 85%;
+        right: 11%;
+        
+            }
+
+            @media (max-width:600px) {
+                background-position: 90% 100%;
+                width: 90%;
+                right: 5%;
+            }
+
+            @media (max-width:500px) {
+                background-position: 90% 100%;
+                width: 90%;
+                right: 5%;
+            }
+
+            @media (max-width:400px) {
+                right: 5%;
+                width: 90%;
+            }
+    
+
+    }
+
+    &__column {
+        width: 100%;
+        color: @baseFontColor;
+        margin-top: 140px;
+
+        @media (max-width:1024px) {
+            margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+            }
+            
+    }
+
+    &__align {
+        width: 65%;
+        display: flex;
+    }
+
+    &__title {
+        margin: 0;
+        position: relative;
+        font-family: @fontAmalfi;
+        font-size: 130px;
+        line-height: 73px;
+        width: 50%;
+        font-weight: 400;
+        margin-bottom: 45px;
+        z-index: 60;
+
+        @media (max-width:1350px) {
+            width: 70%;
+        }
+
+        @media (max-width:1024px) {
+            width: 94%;
+            text-align: center;
+            }
+
+            @media (max-width:700px) {
+                font-size: 100px;
+                }   
+ 
+        &::before {
+            position: absolute;
+            content: url("./Image/title_before.png");
+            left:-60px;
+            bottom:90px;
+
+            @media (max-width:1024px) {
+            content: "";
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: url("./Image/title_after.png");
+            right:35%;
+            top:75%;
+
+            @media (max-width:1200px) {
+                right:30%;
+            }
+
+            @media (max-width:1024px) {
+                content: "";
+                }
+        }
+    }
+
+    &__subtitle {
+        font-family: @fontGothic;
+        font-size: 20px;
+        line-height: 52px;
+        font-weight: 200;
+        width: 70%;
+
+        @media (max-width:1600px) {
+        width: 40%;
+        }
+
+        @media (max-width:1024px) {
+            width: 53%;
+            z-index: 60;
+            text-align: center;
+}
+
+        @media (max-width:600px) {
+            width: 70%;
+            margin-right: 15%;
+        }
+
+        @media (max-width:400px) {
+            width:90%;
+
+}
+    }
+}

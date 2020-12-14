@@ -1,0 +1,30 @@
+.active {
+  width: 250px !important;
+  right: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
+  visibility: visible !important;
+  height: 30px;
+  top: -8px;
+}
+@media (max-width: 1450px) {
+  .active {
+    width: 200px !important;
+    right: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .active {
+    top: 3px;
+  }
+}
+@media (max-width: 600px) {
+  .active {
+    width: 190px !important;
+  }
+}
+@media (max-width: 400px) {
+  .active {
+    width: 200px !important;
+  }
+}

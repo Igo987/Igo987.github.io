@@ -1,0 +1,26 @@
+.close {
+  background-image: url("Image/Close.png");
+  width: 22px;
+  height: 22px;
+  position: relative;
+  background-color: inherit;
+  border: none;
+  right: 35px;
+  top: -2px;
+}
+@media (max-width: 1450px) {
+  .close {
+    left: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .close {
+    right: 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .close {
+    left: -22%;
+    top: 9px;
+  }
+}

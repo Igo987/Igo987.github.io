@@ -1,0 +1,65 @@
+.aside {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    height: 125px;
+
+    @media (max-width:1300px) {
+        width: 60%;
+        }
+
+        @media (max-width:1024px) {
+            display: none;
+            }
+
+
+    &::before {
+        position: absolute;
+        content: url("./Image/before_down.png");
+        left:0;
+        bottom:0;
+    }
+
+    &__link {
+        display: flex;
+        font-family:@fontGothic;
+        font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+        width: 100%;
+        text-decoration: none;
+        color: @baseFontColor;
+
+        &:hover .aside__title {
+            color:@hoverFontColor;
+           
+        }
+    }
+  
+    &__image {
+        width: 100%;
+        max-width: 196px;
+        margin-right: 15px;
+    }
+
+    &__text {
+        width: 60%;
+        min-width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        z-index: 10;
+    }
+
+    &__title {
+        font-family: @fontAmalfi;
+        width: 90%;
+        font-size: 42px;
+        line-height: 23px;
+        font-weight: 500;
+        margin: 0;
+        padding: 3% 0;
+
+    }
+
+}

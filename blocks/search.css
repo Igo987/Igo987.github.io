@@ -1,0 +1,19 @@
+.search {
+  position: relative;
+}
+.search__input {
+  width: 0;
+  position: absolute;
+  visibility: hidden;
+}
+@media (max-width: 500px) {
+  .search__input {
+    position: relative;
+  }
+}
+.search__button {
+  background-image: url("Image/loupe.svg");
+  width: 18px;
+  height: 18px;
+  border: none;
+}
