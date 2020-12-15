@@ -1,0 +1,9 @@
+.services__subtitle {
+    width: 45%;
+    }
+
+    @media  (max-width:950px) {
+.services__subtitle {
+    display: none;
+}
+    }

@@ -1,0 +1,12 @@
+.contact__address{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin-right: 15px;
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+.contact__address {
+    width: 35%;
+}
+}

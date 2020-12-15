@@ -1,0 +1,14 @@
+.services__align {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 120px 0 76px;
+    align-items: center;
+}
+
+@media  (max-width:950px) {
+.services__align {
+    margin: 60px 0 30px;
+   flex-direction: column-reverse;
+}
+}

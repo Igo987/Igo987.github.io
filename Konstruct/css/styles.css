@@ -1,0 +1,348 @@
+
+@import url('./blocks/about/about.css');
+@import url('./blocks/address/address.css');
+@import url('./blocks/button/button.css');
+@import url('./blocks/contact/contact.css');
+@import url('./blocks/fonts/fonts.css');
+@import url('./blocks/header/header.css');
+@import url('./blocks/main/main.css');
+@import url('./blocks/nav/nav.css');
+@import url('./blocks/page/page.css');
+@import url('./blocks/services/services.css');
+@import url('./blocks/signup/signup.css');
+@import url('./blocks/title/title.css');
+@import url('./blocks/work/work.css');
+@import url('./blocks/page/page.css');
+@import url('./blocks/logo/logo.css');
+/* @font-face {
+    font-family: 'Bebas Neue';
+    font-style: bold;
+    src: local('Bebas Neue'),
+    url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf');
+}
+
+.page {
+  max-width: 1438px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+  font-weight: normal;
+  font-size: 13px;
+  background-color: #F2F2F2;
+  color: rgba(72, 85, 91, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.header {
+    width:100%;
+    background-image: url(../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 769px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; 
+    color: rgba(255, 255, 255, 1);
+}
+
+.header__container {
+    text-align: center;
+}
+
+.header__title {
+    font-family: 'Bebas Neue';
+    font-size: 60px;
+    line-height: 70.31px;
+    letter-spacing: 5.71px;
+}
+
+.header__subtitle {
+    font-size: 16px;
+    line-height: 21.79px;
+    font-weight: 600;
+}
+
+.header__nav {
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white; 
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration:none;
+    color: rgba(72, 85, 91, 1);
+}
+
+a:hover{
+color:rgba(0, 164, 229, 1);
+}
+
+.about {
+display: flex;
+flex-direction: column;
+align-items: center;   
+}
+
+.about__bold {
+    font-size: 20px;
+    line-height: 27.24px;
+    letter-spacing: 0.19px;
+    font-weight: 700;
+}
+
+.about__align {
+    width: 65%;
+    font-family: 'Open Sans';
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.about__container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    
+}
+
+.about__link {
+ color:rgba(0, 164, 229, 1);
+}
+
+.about__order {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.about__title {
+    margin: 57px auto 92px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.about__text {
+font-size: 13px;
+line-height: 23px;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid rgba(230, 230, 230, 1);
+}
+
+.nav__align {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 65px;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.services {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.services__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 115px;
+}
+
+.services__align {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 120px 0 76px;
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    background-color: #00A4E5;
+   
+}
+
+.button__text {
+    margin: 0 auto;
+    color:rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 13px;
+    line-height: 17.7px;
+    letter-spacing: 0.5px;
+}
+
+.services__subtitle {
+width: 45%;
+}
+
+.services__item {
+width: 295px;
+height: 330px;
+border: 1px solid rgba(230, 230, 230, 1);
+padding: 23px 38px;
+box-sizing: border-box;
+}
+
+.work {
+background-image: url(../images/bg\ 1.png);
+background-position: center;
+    background-size: cover;
+    width: 1440px;
+    height: 499px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.work__title {
+width: 350px;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+text-align: center;
+padding: 120px  0 35px;
+}
+
+.signup {
+    margin-top: -1px;
+    width: 1440px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(23, 24, 25, 1);
+    align-items: center;
+}
+
+.signup__title {
+    font-size: 22px;
+   margin-right: 70px;
+    letter-spacing: 0.85px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.signup__input {
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-right: -3px;
+}
+
+.contact {
+    background-color: rgba(20, 26, 32, 1);
+    width: 1440px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact__nav {
+    display: flex;
+}
+
+.contact__address{
+    display: flex;
+    flex-direction: column;
+    width: 142px;
+}
+
+.contact__align {
+width: 65%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact__text {
+    width: 250px;
+    font-size: 11px;
+    line-height: 19px;
+}
+.contact__flex {
+display: flex;
+flex-direction: column;
+width: 250px;
+}
+
+.contact__container {
+    display: flex;
+   
+}
+
+.contact__title {
+    font-size: 11px;
+    line-height: 16px;
+
+}
+
+.contact__links {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.address {
+    width: 1440px;
+    background-color: #171819;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.address__text {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 13px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact__link {
+    font-size: 11px;
+    line-height: 25px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.contact__social {
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+}
+ */

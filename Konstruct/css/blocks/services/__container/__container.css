@@ -1,0 +1,20 @@
+.services__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 115px;
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+.services__container {
+    margin-bottom: 0;
+    width: 100%;
+   
+}
+}
+
+@media (min-width:426px) and (max-width:767px)  {
+.services__container {
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+}

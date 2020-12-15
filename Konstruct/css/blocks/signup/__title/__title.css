@@ -1,0 +1,12 @@
+.signup__title {
+    font-size: 22px;
+   margin-right: 70px;
+    letter-spacing: 0.85px;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media (min-width:426px) and (max-width:767px)  {
+.signup__title {
+    margin: 0 auto 10px;
+}
+}

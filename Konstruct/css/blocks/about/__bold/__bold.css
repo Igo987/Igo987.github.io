@@ -1,0 +1,11 @@
+.about__bold {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+@media (min-width:426px) and (max-width:767px)  {
+.about__bold {
+    font-size: 22px;
+}
+}

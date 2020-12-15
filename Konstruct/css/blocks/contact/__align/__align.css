@@ -1,0 +1,13 @@
+.contact__align {
+    width: 65%;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    @media (min-width:426px) and (max-width:767px)  {
+.contact__align {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+}
