@@ -1,0 +1,19 @@
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+
+@media  (min-width:768px) and (max-width:1024px) {
+.nav__list {
+    width: 38%;
+}
+}
+
+
+@media  (min-width:426px) and (max-width:767px) {
+    .nav__list {
+        width: 65%;
+    }
+}

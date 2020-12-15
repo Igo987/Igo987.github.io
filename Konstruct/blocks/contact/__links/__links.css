@@ -1,0 +1,11 @@
+.contact__links {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+.contact__links {
+    width: 35%;
+}
+}

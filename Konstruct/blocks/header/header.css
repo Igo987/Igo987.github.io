@@ -1,0 +1,26 @@
+@import url('./__title/__title.css');
+@import url('./__subtitle/__subtitle.css');
+@import url('./__nav/__nav.css');
+@import url('./__container/header__container.css');
+@import url('./__logo/__logo.css');
+
+.header {
+    width:100%;
+    background-image: url(../../../images/bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 769px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
+    color: rgba(255, 255, 255, 1);
+}
+
+
+@media  (min-width:768px) and (max-width:1024px) {
+    .header {   
+    width: 100%;
+
+    }
+}

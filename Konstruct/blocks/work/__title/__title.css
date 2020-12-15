@@ -1,0 +1,20 @@
+.work__title {
+    width: 25%;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    padding: 120px  0 35px;
+    }
+
+    @media  (min-width:768px) and (max-width:1024px) {
+        .work__title {
+            width: 34%;
+        }
+    }
+
+    @media  (min-width:426px) and (max-width:767px) {
+        .work__title {
+            width: 45%;
+        }
+    }

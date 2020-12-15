@@ -1,0 +1,19 @@
+.about__container {
+    display: flex;
+    justify-content: space-around;
+    width: 55%;
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+.about__container {
+    width: 100%;
+    justify-content: space-between;
+}
+}
+
+@media (min-width:426px) and (max-width:767px)  {
+.about__container {
+    width: 100%;
+    justify-content: space-between;
+}
+}

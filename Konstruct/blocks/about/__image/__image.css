@@ -1,0 +1,19 @@
+.about__image {
+max-width: 300px;
+max-height: 225px;
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+.about__image {
+    min-width: 28%;
+    max-height: 225px;
+    }
+}
+
+@media (min-width:426px) and (max-width:767px)  {
+.about__image {
+    min-width: 30%;
+    max-height: 180px;
+}
+}
+

@@ -1,0 +1,32 @@
+@import url('./__text/__text.css');
+@import url('./__title/__title.css');
+@import url('./__align/__align.css');
+@import url('./__container/__container.css');
+@import url('./__flex/__flex.css');
+@import url('./__link/__link.css');
+@import url('./__links/__links.css');
+@import url('./__nav/__nav.css');
+@import url('./__social/__social.css');
+@import url('./__address/__address.css');
+
+.contact {
+    background-color: rgba(20, 26, 32, 1);
+    width: 100%;
+    min-height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media  (min-width:768px) and (max-width:1024px) {
+    .contact {
+       flex-direction: column;
+    }
+}
+
+@media (min-width:426px) and (max-width:767px)  {
+    .contact {
+        justify-content: space-between;
+    }
+}

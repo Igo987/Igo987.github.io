@@ -1,0 +1,19 @@
+.about__text {
+    font-size: 13px;
+    line-height: 23px;
+    width: 85%;
+    }
+
+    @media  (min-width:768px) and (max-width:1024px) {
+.about__text {
+    width: 100%;
+}
+}
+
+    @media (min-width:426px) and (max-width:767px)  {
+.about__text {
+    font-size: 15px;
+    width: 100%;
+}
+}
+
